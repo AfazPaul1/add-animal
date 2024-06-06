@@ -1,6 +1,6 @@
-function AnimalShow(params) {
+function AnimalShow({type}) {
     return(
-        <h1></h1>
+        <h1>{type}</h1>
     )
 }
 export default AnimalShow
