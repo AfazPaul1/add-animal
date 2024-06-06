@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import AnimalShow from './AnimalShow'  
+import './App.css'
 
 const animals=["dog", "cat", "cow", "gator", "horse", "bird"]
 
@@ -34,12 +35,12 @@ const renderedAnimals = animals.map(
 
 
     return (
-        <div>
+        <div className='app'>
             <button type="button" onClick={buttonClicked}>Add Animal</button>
             {/* <p>{animals}</p> */}
             {/* <p>{count}</p> */}
             {/* <AnimalShow type={animals} /> */}
-            <div>{renderedAnimals}</div>
+            <div className='animal-list'>{renderedAnimals}</div>
         </div>
     )
 }
